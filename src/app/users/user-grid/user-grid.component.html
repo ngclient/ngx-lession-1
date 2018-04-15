@@ -1,0 +1,42 @@
+<dx-data-grid 
+    id="gridContainer"
+    [dataSource]="dataSource"
+    keyExpr="ID"
+    [allowColumnReordering]="true"
+    (onEditingStart)="logEvent('EditingStart')"
+    (onInitNewRow)="logEvent('InitNewRow')"
+    (onRowInserting)="logEvent('RowInserting')"
+    (onRowInserted)="logEvent('RowInserted')"
+    (onRowUpdating)="logEvent('RowUpdating')"
+    (onRowUpdated)="logEvent('RowUpdated')"
+    (onRowRemoving)="logEvent('RowRemoving')"
+    (onRowRemoved)="logEvent('RowRemoved')">
+    
+    <dxo-paging [enabled]="true"></dxo-paging>
+    <dxo-editing 
+         mode="row"
+         [allowUpdating]="true"
+         [allowDeleting]="true"
+         [allowAdding]="true">
+    </dxo-editing>
+    
+    <dxi-column dataField="ID" caption="Title"></dxi-column>
+    <dxi-column dataField="Username"></dxi-column>
+    <dxi-column dataField="Password"></dxi-column>
+    <dxi-column dataField="RoleID" [width]="130"></dxi-column>
+    <!-- <dxi-column
+        dataField="StateID"
+        caption="State"
+        [width]="125">         
+        <dxo-lookup
+            [dataSource]="states"
+            displayExpr="Name"
+            valueExpr="ID">
+        </dxo-lookup>
+    </dxi-column> -->
+    <!-- <dxi-column
+        dataField="BirthDate"
+        [width]="125"
+        dataType="date">
+    </dxi-column> -->
+</dx-data-grid>
