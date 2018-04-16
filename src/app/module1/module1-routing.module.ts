@@ -3,10 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'sapmatluon1', loadChildren: './submodule1/submodule1.module#Submodule1Module'
+    path: 'submodule1', loadChildren: './submodule1/submodule1.module#Submodule1Module'
   },
   {
-    path: 'sapmatluon2', loadChildren: './submodule2/submodule2.module#Submodule2Module'
+    path: 'submodule2', loadChildren: './submodule2/submodule2.module#Submodule2Module'
   }
 ];
 

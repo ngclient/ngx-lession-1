@@ -7,7 +7,7 @@ const routes: Routes = [
   { path: '', redirectTo: '/user', pathMatch: 'full' },
   { path: 'user', loadChildren: './users/users.module#UsersModule' },
   { path: 'role', loadChildren: './roles/roles.module#RolesModule' },
-  { path: 'md1', loadChildren: './module1/module1.module#Module1Module' },
+  { path: 'md1',  loadChildren: './module1/module1.module#Module1Module' },
   // lazy load route module user
   { path: '**', component: NotFoundComponent }
 ];

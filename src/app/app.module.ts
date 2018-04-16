@@ -5,10 +5,8 @@ import { HttpModule } from '@angular/http';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
-
 import { AppComponent } from './app.component';
-import { HeadersComponent } from './shared/components/headers/headers.component';
-import { FootersComponent } from './shared/components/footers/footers.component';
+
 
 @NgModule({
   declarations: [
