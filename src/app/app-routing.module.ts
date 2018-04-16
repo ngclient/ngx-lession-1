@@ -4,7 +4,7 @@ import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 import { UserComponent } from './users/user/user.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/user', pathMatch: 'full' },
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'user', loadChildren: './users/users.module#UsersModule' },
   { path: 'role', loadChildren: './roles/roles.module#RolesModule' },
   { path: 'md1',  loadChildren: './module1/module1.module#Module1Module' },
